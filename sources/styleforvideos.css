@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -16,18 +16,18 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: transparent;
   color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #10D1F4;
   color: white;
 }
 body {
   background-color: #F9DED8;
-  background-image: url("bg.png");
+  background-image: url("videobg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -47,7 +47,7 @@ h2 {
   font-weight: normal;
 }
 p {
-  color: grey;
+  color: white;
   font-family: verdana;
   font-size: 15px;
 }

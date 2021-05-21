@@ -1,6 +1,6 @@
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: transparent;
   overflow: hidden;
 }
 
@@ -27,38 +27,38 @@
 }
 body {
   background-color: #F9DED8;
-  background-image: url("bg.png");
+  background-image: url("noticebg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
 h1 {
   font-size: 50px;
-  color: grey;
+  color: #C6F8F2;
   text-align: center;
-  font-family: Georgia;
+  font-family: verdana;
   font-weight: normal;
 }
 h2 {
   font-size: 25px;
-  color: grey;
+  color: #C6F8F2;
   text-align: center;
-  font-family: Helvetica;
+  font-family: verdana;
   font-weight: normal;
 }
 p {
-  color: grey;
+  color: #C6F8F2;
   font-family: verdana;
   font-size: 15px;
 }
 li {
-  color: grey;
+  color: #C6F8F2;
   font-family: Georgia;
   font-size: 17px;
   font-weight: normal;
 }
 h3 {
-  color: green;
+  color: #C6F8F2;
   font-family: verdana;
   font-size: 17px;
   font-weight: normal;
