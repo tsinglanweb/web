@@ -17,17 +17,17 @@
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
-  color: black;
+  color: #48B3AE;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #F41010;
+  background-color: #38D7D0;
   color: white;
 }
 body {
   background-color: #F9DED8;
-  background-image: url("gamebg.jpg");
+  background-image: url("../pic/dashboardbg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -41,13 +41,13 @@ h1 {
 }
 h2 {
   font-size: 25px;
-  color: #6DF29B;
+  color: grey;
   text-align: center;
   font-family: Helvetica;
   font-weight: normal;
 }
 p {
-  color: #6DF29B;
+  color: grey;
   font-family: verdana;
   font-size: 15px;
 }
@@ -83,4 +83,29 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     display: block
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
 }

@@ -22,12 +22,12 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #F4CE10;
+  background-color: #F41010;
   color: white;
 }
 body {
   background-color: #F9DED8;
-  background-image: url("novelbg.jpg");
+  background-image: url("../pic/gamebg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -41,13 +41,13 @@ h1 {
 }
 h2 {
   font-size: 25px;
-  color: grey;
+  color: #6DF29B;
   text-align: center;
   font-family: Helvetica;
   font-weight: normal;
 }
 p {
-  color: grey;
+  color: #6DF29B;
   font-family: verdana;
   font-size: 15px;
 }
@@ -64,7 +64,7 @@ h3 {
   font-weight: normal;
 }
 a {
-  color: white;
+  color: red;
   font-family: verdana;
   font-size: 20px;
   font-weight: lighter;
