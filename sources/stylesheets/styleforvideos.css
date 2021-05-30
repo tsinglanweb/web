@@ -41,9 +41,9 @@ h1 {
 }
 h2 {
   font-size: 25px;
-  color: grey;
+  color: white;
   text-align: center;
-  font-family: Helvetica;
+  font-family: verdana;
   font-weight: normal;
 }
 p {
@@ -80,7 +80,31 @@ h4 {
   text-align: center;
 }
 .center {
-    margin-left: auto;
-    margin-right: auto;
-    display: block
+    text-align: center;
+    display: block;
+}
+.video-container {
+  margin: 0 auto;
+}
+.parent {
+  display: flex;
+}
+iframe {
+  justify-content: center;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
