@@ -22,7 +22,7 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #15C2B5;
   color: white;
 }
 body {
@@ -69,6 +69,13 @@ h5 {
   font-size: 25px;
   font-weight: normal;
 }
+h6 {
+  color: #FF0000;
+  font-family: verdana;
+  font-size: 25px;
+  font-weight: normal;
+  text-align: center;
+}
 a {
   color: white;
   font-family: verdana;
@@ -114,4 +121,15 @@ h4 {
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
