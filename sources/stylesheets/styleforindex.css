@@ -216,3 +216,7 @@ hr {
     width: 100%;
   }
 }
+
+.sitelogo {
+  background-color: transparent;
+}
