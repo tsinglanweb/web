@@ -6,16 +6,24 @@
     <link rel="shortcut icon" href="pic/img.ico" />
   </head>
   <body>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="pic/sitelogo.png" alt="sitelogo" width="85" height="85"><p>v2.1</p>
-    <div class="topnav">
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <a href="../index.html">Dashboard</a>
       <a href="scratchgames.html">Games</a>
-      <a class="active" href="videos.html">Movies</a>
+      <a href="videos.html">Movies</a>
       <a href="novels.html">Novels</a>
       <a href="music.html">Music</a>
       <a href="https://github.com/tsinglanweb/web">About Us in <img src="pic/sitelogo.png" alt="github" width="14" height="14"></a>
     </div>
+
+<!-- Use any element to open the sidenav -->
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <img class="sitelogo" src="pic/sitelogo.png" alt="sitelogo" width="85" height="85"><p>v2.1</p>
+      <br><span class="more" onclick="openNav()">More Pages Here⏎</span>
+
 
     <br>
     <div class="row">
@@ -25,24 +33,35 @@
         <source src="videos/apple.mp4" type="video/mp4">
         Your browser does not support the video tag.
         </video> -->
-
-          <p><iframe width="560" height="315" src="https://www.youtube.com/embed/vLkBUix_D3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPowered by YouTube</p>
+        <p><iframe width="504" height="283.5" src="https://www.youtube.com/embed/vLkBUix_D3U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPowered by YouTube</p>
       </div>
-      <div class="column">
+      <div class="columntwo">
         <h2>Gran Torino</h2>
         <p class="center">for online visitors, please download it using <a href="https://pan.baidu.com/s/1Q58FXX13k-jVy5Vgy2hRXw">DOWNLOAD</a></p>
         <p class="center">download password: 8v28</p>
         <p class="center">Powered by BaiduNetDisk</p>
       </div>
     </div>
+</div>
+<script>
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
 
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
     <hr>
     <p>All sources are cited in <a href="notices.html">User Agreements and Copyright Declarations</a>, PLEASE notice that some of the works aren't originally from our works.</p>
     <p>Once you are using our website, that means you already have read our notices, copyright declarations and agreements, and you are aware of them all.<p>
-    <p>Copyright &copy 2021 Paulsweb</p>
+    <br><p>Copyright &copy 2021 Paulsweb</p>
     <p>All rights reserved.</p>
-    <br>
-    <p>Supported by <a href="http://tsinglan.cn"><img src="pic/aiweilogo.png" alt="tsinglanlogo" width="92.5" height="53.5"></a></p>
-    <p>Powered by <a href="https://atom.io"><img src="pic/atomlogo.png" alt="atomlogo" width="30" height="30"></a> of <a href="https://github.com/"><img src="pic/github.png" alt="githublogo" width="45" height="30"></a></p><br><iframe src="https://free.timeanddate.com/clock/i7qoposm/n1232/fn16/fs16/tct/pct/blt0/brt0/btt0/bbt0/pa8/tt0/tw1/tm1/th2/ta1/tb4" frameborder="0" width="152" height="54" allowtransparency="true"></iframe><iframe src="https://free.timeanddate.com/clock/i7qooku6/n102/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff" frameborder="0" width="110" height="110"></iframe>
   </body>
 </html>

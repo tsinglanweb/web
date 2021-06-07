@@ -6,10 +6,11 @@
     <link rel="shortcut icon"  href="sources/pic/img.ico" />
   </head>
   <body>
-    <img class="sitelogo" src="sources/pic/sitelogo.png" alt="sitelogo" width="85" height="85"><p>v2.1</p>
 
-    <div class="topnav">
-      <a class="active" href="index.html">Dashboard</a>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="index.html">Dashboard</a>
       <a href="sources/scratchgames.html">Games</a>
       <a href="sources/videos.html">Movies</a>
       <a href="sources/novels.html">Novels</a>
@@ -17,26 +18,53 @@
       <a href="https://github.com/tsinglanweb/web">About Us in <img src="sources/pic/sitelogo.png" alt="github" width="14" height="14"></a>
     </div>
 
-    <div class="row">
-      <div class="column">
-        <br><h3>Frequently used links</h3>
-        <a href="https://tsinglanstudent.schoolis.cn"><img src="sources/pic/xiaobao.jpeg" alt="xiaobao" width="100" height="100"></a>
-        <a href="https://mail.tsinglan.cn"><img src="sources/pic/mailbox.png" alt="mailbox" width="100" height="100"></a>
-        <a href="https://krunker.io"><img src="sources/pic/krunker.jpeg" alt="krunker" width="100" height="100"></a>
-        <a href="https://shellshock.io"><img src="sources/pic/shshock.jpeg" alt="ss" width="170" height="100"></a>
-        <a href="https://youtube.com"><img src="sources/pic/youtube.png" alt="youtube" width="100" height="100"></a>
-        <a href="https://bilibili.com"><img src="sources/pic/bilibili.png" alt="bzhan" width="100" height="100"></a>
-        <a href="https://www.intel.cn/content/www/cn/zh/homepage.html"><img src="sources/pic/intel.png" alt="intel" width="100" height="100"></a>
-        <a href="https://www.apple.com.cn"><img src="sources/pic/apple.jpg" alt="apple" width="100" height="100"></a>
-        <a href="https://pixiv.net"><img src="sources/pic/pixiv.png" alt="pixiv" width="100" height="100"></a>
-        <a href="https://www.calculator.net/gpa-calculator.html"><img src="sources/pic/gpapic.png" alt="gpa" width="100" height="100"></a>
-      </div>
-      <div class="column">
-        <br>
-        <embed class="center" src="sources/other/timetable.pdf" width="700px" height="500px" />
-        <br><br>
+<!-- Use any element to open the sidenav -->
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <div id="main">
+      <img class="sitelogo" src="sources/pic/sitelogo.png" alt="sitelogo" width="85" height="85"><p>v2.1</p>
+      <br><span class="more" onclick="openNav()">More Pages Here⏎</span>
+
+
+
+      <div class="row">
+        <div class="column">
+          <br><h3>Frequently used links</h3>
+          <a href="https://tsinglanstudent.schoolis.cn"><img src="sources/pic/xiaobao.jpeg" alt="xiaobao" width="100" height="100"></a>
+          <a href="https://mail.tsinglan.cn"><img src="sources/pic/mailbox.png" alt="mailbox" width="100" height="100"></a>
+          <a href="https://krunker.io"><img src="sources/pic/krunker.jpeg" alt="krunker" width="100" height="100"></a>
+          <a href="https://shellshock.io"><img src="sources/pic/shshock.jpeg" alt="ss" width="170" height="100"></a>
+          <a href="https://youtube.com"><img src="sources/pic/youtube.png" alt="youtube" width="100" height="100"></a>
+          <a href="https://bilibili.com"><img src="sources/pic/bilibili.png" alt="bzhan" width="100" height="100"></a>
+          <a href="https://www.intel.cn/content/www/cn/zh/homepage.html"><img src="sources/pic/intel.png" alt="intel" width="100" height="100"></a>
+          <a href="https://www.apple.com.cn"><img src="sources/pic/apple.jpg" alt="apple" width="100" height="100"></a>
+          <a href="https://pixiv.net"><img src="sources/pic/pixiv.png" alt="pixiv" width="100" height="100"></a>
+          <a href="https://www.calculator.net/gpa-calculator.html"><img src="sources/pic/gpapic.png" alt="gpa" width="100" height="100"></a>
+        </div>
+        <div class="columntwo">
+          <br>
+          <embed class="center" src="sources/other/timetable.pdf" width="700px" height="500px" />
+          <br><br>
+        </div>
       </div>
     </div>
+
+    <script>
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    }
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+      document.body.style.backgroundColor = "white";
+    }
+    </script>
 
     <hr>
     <p>All sources are cited in <a href="sources/notices.html">User Agreements and Copyright Declarations</a>, PLEASE notice that some of the works aren't originally from our works.</p>
@@ -45,6 +73,6 @@
     <p>All rights reserved.</p>
     <br>
     <p>Supported by <a href="http://tsinglan.cn"><img src="sources/pic/aiweilogo.png" alt="tsinglanlogo" width="92.5" height="53.5"></a></p>
-    <p>Powered by <a href="https://atom.io"><img src="sources/pic/atomlogo.png" alt="atomlogo" width="30" height="30"></a> of <a href="https://github.com/"><img src="sources/pic/github.png" alt="githublogo" width="45" height="30"></a></p><h4>Current Time<br><iframe src="https://free.timeanddate.com/clock/i7qoposm/n1232/fn16/fs16/tct/pct/blt0/brt0/btt0/bbt0/pa8/tt0/tw1/tm1/th2/ta1/tb4" frameborder="0" width="152" height="54" allowtransparency="true"></iframe><iframe src="https://free.timeanddate.com/clock/i7qooku6/n102/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff" frameborder="0" width="110" height="110"></iframe></h4>
+    <p>Powered by <a href="https://atom.io"><img src="sources/pic/atomlogo.png" alt="atomlogo" width="30" height="30"></a> of <a href="https://github.com/"><img src="sources/pic/github.png" alt="githublogo" width="45" height="30"></a></p>
   </body>
 </html>
