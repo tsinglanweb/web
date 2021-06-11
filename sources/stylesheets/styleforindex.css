@@ -189,7 +189,7 @@ button:hover {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: none;/* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   left: 0;
@@ -270,10 +270,10 @@ hr {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: transparent; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 0.8s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
@@ -281,14 +281,14 @@ hr {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #6DF29B;
   display: block;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: transparent;
 }
 
 /* Position and style the close button (top right corner) */
@@ -302,7 +302,7 @@ hr {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left .5s;
+  transition: margin-left 1.2s;
   padding: 20px;
 }
 
