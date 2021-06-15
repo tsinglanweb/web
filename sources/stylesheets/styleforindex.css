@@ -273,7 +273,7 @@ hr {
   background-color: transparent; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.8s; /* 0.5 second transition effect to slide in the sidenav */
+  transition: 1s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
@@ -283,7 +283,7 @@ hr {
   font-size: 25px;
   color: #6DF29B;
   display: block;
-  transition: 0.7s;
+  transition: 0.3s;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -302,8 +302,8 @@ hr {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left 1.2s;
-  padding: 20px;
+  transition: margin-left 5s;
+  padding: 35px;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
