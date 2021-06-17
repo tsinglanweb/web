@@ -6,6 +6,14 @@
     <link rel="shortcut icon"  href="sources/pic/img.ico" />
   </head>
   <body>
+    <script>
+      alert("Please make sure you have already connected to external network. For example, you are connected to a VPN or you've already flipped out from Chinese GFW. If you are still inside China using network in the GFW, some functions might not work.");
+      alert("Please read our terms before you use the website, the link is right at the bottom of the page.");
+      if (confirm("If you wanna read the terms now, please click on 'OK', otherwise click 'Cancel'.")) {
+        window.location.replace("sources/notices2.html");
+      } else {
+      }
+    </script>
 
 
     <div id="mySidenav" class="sidenav">
@@ -59,7 +67,7 @@
       <p>All rights reserved.</p>
     </div>
 
-    <script>
+    <script src="sources/js/main.js">
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
     function openNav() {
       document.getElementById("mySidenav").style.width = "220px";
