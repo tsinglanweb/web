@@ -176,6 +176,12 @@ button:hover {
   background-color: #f44336;
 }
 
+.quitbtn {
+  padding: 100px 30px;
+  background-color: #f44336;
+  position: absolute;
+}
+
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .signupbtn {
   float: left;

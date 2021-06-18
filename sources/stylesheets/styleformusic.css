@@ -19,6 +19,11 @@
   background-color: #ddd;
   color: black;
 }
+.quitbtn {
+  padding: 100px 30px;
+  background-color: #f44336;
+  position: absolute;
+}
 
 /* Add a color to the active/current link */
 .topnav a.active {
