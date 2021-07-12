@@ -7,16 +7,15 @@
   </head>
   <body>
     <script>
-      alert("You'll be redirected to the login site");
       var ps = prompt("Username", "Guest");
-      var pw = prompt("Password","");
+      var pw = prompt("Password","If you are logging in as Guest, please click OK directly.");
 
       if (ps == "admin" && pw == "1112") {
 
         alert("Welcome " + ps + " !");
         window.location.replace("index2.html");
       }
-      else if (ps == "Guest" && pw == "") {
+      else if (ps == "Guest" && pw == "If you are logging in as Guest, please click OK directly.") {
         alert("Please make sure you have already connected to external network. For example, you are connected to a VPN or you've already flipped out from Chinese GFW. If you are still inside China using network in the GFW, some functions might not work.");
         alert("Please read our terms before you use the website, the link is right at the bottom of the page.");
         if (confirm("If you wanna read the terms now, please click on 'OK', otherwise click 'Cancel'.")) {
@@ -33,7 +32,7 @@
         window.location.replace("index2.html");
       }
       else if (ps == "jacob" && pw == "asdfghjkl;'") {
-        
+
         alert("Welcome " + ps + " !");
         window.location.replace("index2.html");
       }
