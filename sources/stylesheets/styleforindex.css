@@ -295,7 +295,7 @@ hr {
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: transparent;
+  color: grey;
 }
 
 /* Position and style the close button (top right corner) */
@@ -309,7 +309,7 @@ hr {
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
-  transition: margin-left 5s;
+  transition: margin-left 1.3s;
   padding: 35px;
 }
 
