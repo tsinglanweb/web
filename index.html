@@ -1,43 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="sources/stylesheets/styleforindex.css">
     <title>Paulsweb - Login</title>
-    <link rel="shortcut icon"  href="sources/pic/img.ico" />
   </head>
   <body>
     <script>
       var ps = prompt("Username", "Guest");
-      var pw = prompt("Password","If you are logging in as Guest, please click OK directly.");
 
-      if (ps == "admin" && pw == "1112") {
-
-        alert("Welcome " + ps + " !");
-        window.location.replace("index2.html");
-      }
-      else if (ps == "Guest" && pw == "If you are logging in as Guest, please click OK directly.") {
-        alert("Please make sure you have already connected to external network. For example, you are connected to a VPN or you've already flipped out from Chinese GFW. If you are still inside China using network in the GFW, some functions might not work.");
-        alert("Please read our terms before you use the website, the link is right at the bottom of the page.");
-        if (confirm("If you wanna read the terms now, please click on 'OK', otherwise click 'Cancel'.")) {
-          alert("Welcome " + ps + " !");
-          window.location.replace("sources/notices2.html");
-        } else {
-          alert("Welcome " + ps + " !");
-          window.location.replace("indexguest.html");
+      if (ps == "admin") {
+        var pw = prompt("Password","");
+        if(pw==1112){
+          window.location.replace("index2.html");
+        }else{
+          document.location.reload(true);
         }
       }
-      else if (ps == "tony" && pw == "123") {
-
-        alert("Welcome " + ps + " !");
-        window.location.replace("tony123oslcksmfhub1123888833920dic9d9wm2b9aj.html");
+      else if (ps == "Guest") {
+          window.location.replace("indexguest.html");
       }
-      else if (ps == "jacob" && pw == "asdfghjkl;'") {
-
-        alert("Welcome " + ps + " !");
-        window.location.replace("jacobasdfghjkl129xcidiwmmsic9w910we187983hrbnf.html");
+      else if (ps == "tony") {
+        var pw = prompt("Password","");
+        if(pw==123){
+          window.location.replace("tony123oslcksmfhub1123888833920dic9d9wm2b9aj.html");
+        }else{
+          document.location.reload(true);
+        }
+      }
+      else if (ps == "jacob") {
+        var pw = prompt("Password","");
+        if(pw=="asdfghjkl;'"){
+          window.location.replace("jacobasdfghjkl129xcidiwmmsic9w910we187983hrbnf.html");
+        }else{
+          document.location.reload(true);
+        }
       }
       else {
-        alert("Either your username or password is wrong, now the page will close.");
         document.location.reload(true);
       }
     </script>
