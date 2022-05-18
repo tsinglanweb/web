@@ -55,8 +55,8 @@
   }
 }
 body {
-  background-color: #F9DED8;
-  background-image: url("../pic/dashboardbg2.jpg");
+  background-color: cyan;
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
